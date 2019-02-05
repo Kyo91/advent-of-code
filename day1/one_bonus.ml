@@ -20,7 +20,7 @@ let rec parse_lines memory acc = function
   
 let rec repeat_frequency input memory acc =
   match parse_lines memory acc input with
-  | Error (acc, memory) -> Printf.printf "Current accult: %d\n" acc;
+  | Error (acc, memory) -> Printf.printf "Current accum: %d\n" acc;
     repeat_frequency input memory acc
   | Ok acc -> acc
   
