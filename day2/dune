@@ -1,0 +1,9 @@
+(executable
+ (name        two)
+ (modules (:standard \ two_bonus))
+ (libraries   core))
+
+(executable
+ (name        two_bonus)
+ (modules (:standard \ two))
+ (libraries   core))

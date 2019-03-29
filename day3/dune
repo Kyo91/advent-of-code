@@ -1,0 +1,9 @@
+(executable
+ (name        three)
+ (modules (:standard \ three_bonus))
+ (libraries   core re2 claim))
+
+(executable
+ (name        three_bonus)
+ (modules (:standard \ three))
+ (libraries   core re2))

@@ -1,0 +1,8 @@
+(library
+ (name claim)
+ (modules claim parser lexer)
+ (libraries core))
+
+(ocamllex lexer)
+(menhir
+ (modules parser))
